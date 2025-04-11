@@ -1,0 +1,116 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://victoriacycling.es/wp-content/uploads/2024/02/1.-13.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Nav completo */
+nav {
+  display: flex;               /* Alinear todo horizontal */
+  align-items: center;          /* Centrar verticalmente */
+  padding: 1rem 2rem;           /* Espaciado interior */
+}
+
+/* Logo BiciUber */
+.logo {
+  font-size: 1.8rem;            /* Tamaño de BiciUber */
+  font-weight: bold;
+  margin-right: auto;           /* Empuja el menú hacia la derecha */
+}
+
+/* Lista del menú */
+nav ul {
+  display: flex;                /* Menú horizontal */
+  list-style: none;             /* Quita los puntitos */
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada botón */
+nav li {
+  margin-left: 80px;            /* Espacio entre botones */
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 4px 0;
+}
+
+/* Subrayado animado al pasar el mouse */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  animation: fadeInDown 1s ease;
+}
+
+/* Párrafos */
+p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease;
+}
+
+/* Botones */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* Imágenes */
+img {
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
