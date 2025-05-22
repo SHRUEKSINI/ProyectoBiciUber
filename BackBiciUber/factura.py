@@ -8,7 +8,7 @@ facturaRouter =  APIRouter()
 class facturaDB(BaseModel):
     numero_de_factura: int
     fecha_expedicion: date 
-    nombre: str
+    nombre_del_producto: str
     descripcion_productos: str
     cantidad: int
     metodo_de_pago:str

@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Cliente from './assets/cliente.jsx';
 import Factura from './assets/factura.jsx';
 import Servicios from './assets/servicios.jsx';
-import productos from './assets/productos.jsx';
+import Productos from './assets/productos.jsx';
+import Quienessomos from './assets/Quienessomos.jsx';
+
 import './App.css';
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
       <div className="App">
         <nav className="navbar">
           <div className="navbar-brand">BiciUber</div>
-          <ul className="navbar-links">
+          <ul className="navbar-links">x|
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/Productos">Productos</Link></li>
             <li><Link to="/cliente">Cliente</Link></li>
@@ -41,6 +43,10 @@ function App() {
           />
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/factura" element={<Factura />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/servicios" element={<Servicios />} />
+          <Route path="/Quienessomos" element={<Quienessomos />} />
+          
         </Routes>
       </div>
     </Router>
